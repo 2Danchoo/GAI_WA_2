@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+
+    {% include 'head.html' %}
+
 <body>
 
 {%  include 'header.html' %}
+
+<hr>
+
 {%  block contents %}
 {%  endblock %}
 
-<div style="height : 10rem; background-color: aqua; margin: 2rem; border-radius: 1rem;">
+<hr>
+
+{#<div style="height : 10rem; background-color: aqua; margin: 2rem; border-radius: 1rem;">#}
 
 </div>
 {% include 'footer.html' %}
 </body>
 </html>
+
+
