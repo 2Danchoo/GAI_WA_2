@@ -14,7 +14,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Fuggles&display=swap" rel="stylesheet">
 
     {# DEFAULT CSS LINK #}
-    <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}"
+    <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}">
 
+    <style>
+        @font-face {
+            font-family: 'NanumSquareR';
+            src: local('NanumSquareR'),
+            url("{% static 'fonts/NanumSquareR.otf' %}") format("opentype");
+        }
+        @font-face {
+            font-family: 'NanumSquareEB';
+            src: local('NanumSquareEB'),    {# local : 사용자 컴퓨터 내에 설치된 글꼴 그대로 사용, 없으면 우리 서버에서 사용 #}
+            url("{% static 'fonts/NanumSquareEB.otf' %}") format("opentype");
+        }
+        @font-face {
+            font-family: 'NanumSquareB';
+            src: local('NanumSquareB'),
+            url("{% static 'fonts/NanumSquareB.otf' %}") format("opentype");
+        }
+        @font-face {
+            font-family: 'NanumSquareL';
+            src: local('NanumSquareL'),
+            url("{% static 'fonts/NanumSquareL.otf' %}") format("opentype");
+        }
+    </style>
 
 </head>
